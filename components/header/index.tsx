@@ -1,16 +1,20 @@
 import { HeaderContainer } from "../../styles/components/Header";
+import logo from '../../assets/logo.png'
+import Image from "next/image";
 
 export function Header() {
     return (
     <HeaderContainer>
-        <p>Junior</p>
+        <Image className="logo" src={logo} alt="Logo" />
         <nav>
             <ul>
-                <li className="home">Inicio</li>
-                <li className="about">Sobre mim</li>
-                <li className="stacks"> Tecnologias </li>
-                <li className="stacks"> Formação </li>
-                <li className="projects"> Projetos </li>
+                <li className="home">Home</li>
+                <li className="about">About me</li>
+                <li className="stacks"> Skills </li>
+                <li className="stacks"> Certifications </li>
+                <li className="projects"> Experience </li>
+                <li className="projects"> Experience </li>
+                
             </ul>
         </nav>
     </HeaderContainer>)
