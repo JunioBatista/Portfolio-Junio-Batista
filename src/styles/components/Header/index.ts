@@ -2,21 +2,49 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
 
-    height: 60px;
     padding: 0 1.5rem;
-    background-color: #47467B;
+    background-color: rgb(255, 174, 48);
     display:flex !important;
     justify-content: space-between;
     align-items: center;
 
-    ul {
-        display: flex;
-        align-items: center;
-        list-style-type: none;
-    }
+    nav {
+        height: 4rem;
 
-    li {
-        margin: 0 1rem;
+        a {
+            margin: 0 1rem;
+            font-size: 1.2rem;
+            color: rgb(48, 48, 48);
+            display: inline-block;
+            position: relative;
+            padding: 0 0.5rem;
+            height: 4rem;
+            line-height: 4rem;
+            transition: color .3s;
+
+            &:hover {
+
+                color:  rgb(255, 255, 255);
+                
+            }
+            &.active {
+                color:white;
+            }
+
+            &.active::after {
+                content:'';
+                height: 6px;
+                border-radius: 3px 3px 0 0;
+                width: 100%;
+                position: absolute;
+                bottom: 1px;
+                left: 0;
+                background-color: white;
+
+            }
+
+        }
+
     }
 
     .logo {

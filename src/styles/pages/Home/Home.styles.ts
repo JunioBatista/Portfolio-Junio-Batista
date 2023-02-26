@@ -5,14 +5,16 @@ export const HomeMainContainer = styled.section`
     margin: 1rem 5rem;
     width: auto;
     height: calc(100vh - 6rem);
-    display: flex;
-    justify-content: space-around;
-    gap: 0.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 
     .presentation {
-        padding: 2rem;
+        border-radius: 12px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .typing {
             height: 7rem;
@@ -27,9 +29,9 @@ export const HomeMainContainer = styled.section`
         }
 
         .name { 
-            color: #47467B;
+            color: rgb(255, 157, 0);
             overflow: hidden;
-            border-right: .6rem solid #47467B;
+            border-right: .6rem solid rgb(255,174,48);
             white-space: nowrap;
             font-size: 5rem;
             width: 0;
@@ -49,8 +51,12 @@ export const HomeMainContainer = styled.section`
     }
 
     .photo {
+        /* background-color: rgba(248, 237, 222,0.8);    */
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .perfilImage {
-            border-radius: 10%;
+            border-radius: 40%;
             height: 72vh;
             width: 25vw;
         }
