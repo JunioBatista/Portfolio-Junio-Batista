@@ -1,39 +1,66 @@
 import styled from  'styled-components'
 
 export const HomeMainContainer = styled.section`
+    padding: 1rem;
     box-sizing: border-box;
-    margin: 1rem 5rem;
-    width: auto;
+    width: 100%;
     height: calc(100vh - 6rem);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: .5fr 1fr;
+    gap: 1rem;
 
-    .presentation {
-        border-radius: 12px;
+    .stacks {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
-        justify-content: center;
+
+
+        .profession {
+            text-align: center;
+            font-size: 3.5rem;
+            font-family: 'Bad Script', cursive;
+            color: black;
+        }
+    }
+
+    .profile {
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+
+        .perfilImage {
+            border-radius: 10%;
+            height: 58vh;
+            width: 100%;
+        }
 
         .typing {
+            display: flex;
             height: 7rem;
             display: inline-block;
         }
 
         .main-title {
-            font-size: 3rem;
+
+            font-size: 2rem;
             color: black;
             font-weight: 900 !important;
             display: block;
+            text-align: right;
         }
 
+
+        
         .name { 
+
             color: rgb(255, 157, 0);
             overflow: hidden;
             border-right: .6rem solid rgb(255,174,48);
             white-space: nowrap;
-            font-size: 5rem;
+            font-size: 4rem;
             width: 0;
             animation: typing 2s forwards;
             >span {
@@ -41,25 +68,7 @@ export const HomeMainContainer = styled.section`
             }
         }
 
-        .profession {
-            text-align: center;
-            font-size: 2rem;
-            font-family: 'Bad Script', cursive;
-            color: black;
-        }
 
-    }
-
-    .photo {
-        /* background-color: rgba(248, 237, 222,0.8);    */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .perfilImage {
-            border-radius: 40%;
-            height: 72vh;
-            width: 25vw;
-        }
     }
 
     @keyframes typing {

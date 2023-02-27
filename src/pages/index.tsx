@@ -20,24 +20,30 @@ export default function Home() {
   return (
     <Fade>
       <HomeMainContainer>
-        <div className="presentation">
-          <Fade>
-            <h1 className="main-title"> - Hi! I Am</h1>
-          </Fade>
-          <div className="typing">
-            <h1 className="name"> Junio Batista </h1>.
-          </div>
+        <div className="stacks">
+
           <Fade delay={1500}>
-            <p className="profession"> Software Developer ( Web Full Stack ) </p>
+            <p className="profession">Full Stack Developer</p>
           </Fade>
           <div className="programming-tools">
+            I work with: 
           { tools.map((item)=> { return <ProgrammingToolsCard key={item.id} tool={item} />
           })
           }
           </div>
         </div>
-        <div className="photo"> 
-        <Image className="perfilImage" src={profilePicture} alt="minha foto de perfil" />
+        <div className="profile"> 
+          <div className="presentation">
+            <div className="typing">
+              <Fade>
+                <h1 className="main-title"> Hi! I Am</h1>
+              </Fade>
+              <h1 className="name"> Junio Batista </h1>.
+            </div>
+          </div>
+        <Fade delay={900}>          
+          <Image className="perfilImage" src={profilePicture} alt="minha foto de perfil" />
+        </Fade>
         </div>
       </HomeMainContainer>
     </Fade>
