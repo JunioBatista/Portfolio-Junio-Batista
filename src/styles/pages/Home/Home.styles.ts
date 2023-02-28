@@ -1,28 +1,15 @@
 import styled from  'styled-components'
 
 export const HomeMainContainer = styled.section`
-    padding: 1rem;
     box-sizing: border-box;
     width: 100%;
-    height: calc(100vh - 6rem);
+    height: calc(100vh - 4.1rem);
     display: grid;
     grid-template-columns: .5fr 1fr;
     gap: 1rem;
-
-    .stacks {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-
-
-        .profession {
-            text-align: center;
-            font-size: 3.5rem;
-            font-family: 'Bad Script', cursive;
-            color: black;
-        }
-    }
+    background-image: url('/images/wave.svg');
+    background-color: rgb(230,231,233);
+    background-repeat: no-repeat;
 
     .profile {
         border-radius: 12px;
@@ -30,24 +17,11 @@ export const HomeMainContainer = styled.section`
         align-items: center;
         justify-content: flex-end;
         flex-direction: column;
-
-        .perfilImage {
-            border-radius: 10%;
-            height: 58vh;
-            width: 100%;
-        }
-
-        .typing {
-            display: flex;
-            height: 7rem;
-            display: inline-block;
-        }
+        height: 10rem;
 
         .main-title {
-
             font-size: 2rem;
             color: black;
-            font-weight: 900 !important;
             display: block;
             text-align: right;
         }
@@ -56,11 +30,11 @@ export const HomeMainContainer = styled.section`
         
         .name { 
 
-            color: rgb(255, 157, 0);
+            color: rgb(255, 157, 0  );
             overflow: hidden;
-            border-right: .6rem solid rgb(255,174,48);
+            border-right: .6rem solid rgb(255, 157, 0  );
             white-space: nowrap;
-            font-size: 4rem;
+            font-size: 3rem;
             width: 0;
             animation: typing 2s forwards;
             >span {

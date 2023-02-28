@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
 
-    padding: 0 1.5rem;
-    background-color: rgb(255, 174, 48);
+    background-color: #222222;
+    border-bottom: 1px solid rgb(145, 145, 145);
     display:flex !important;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,9 @@ export const HeaderContainer = styled.header`
         a {
             margin: 0 1rem;
             font-size: 1.2rem;
-            color: rgb(48, 48, 48);
+            color: rgb(145, 145, 145);
             display: inline-block;
             position: relative;
-            padding: 0 0.5rem;
             height: 4rem;
             line-height: 4rem;
             transition: color .3s;
@@ -28,7 +27,7 @@ export const HeaderContainer = styled.header`
                 
             }
             &.active {
-                color:white;
+                color:rgb(255, 157, 0  );
             }
 
             &.active::after {
@@ -48,7 +47,9 @@ export const HeaderContainer = styled.header`
     }
 
     .logo {
-        height: 3rem;
-        width: 7rem;
+        margin-left: 1rem;
+        border-radius: 30%;
+        height: 3.5rem;
+        width: 4.5rem;
     }
 `
