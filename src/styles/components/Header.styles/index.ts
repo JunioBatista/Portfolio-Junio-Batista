@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-
-    background-color: #222222;
+    padding: 0 1.5rem;
+    background-color: #000000;
     border-bottom: 1px solid rgb(145, 145, 145);
     display:flex !important;
     justify-content: space-between;
@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
         height: 4rem;
 
         a {
-            margin: 0 1rem;
+            margin: 0 1.5rem;
             font-size: 1.2rem;
             color: rgb(145, 145, 145);
             display: inline-block;
@@ -22,12 +22,11 @@ export const HeaderContainer = styled.header`
             transition: color .3s;
 
             &:hover {
-
                 color:  rgb(255, 255, 255);
-                
             }
+
             &.active {
-                color:rgb(255, 157, 0  );
+                color:rgba(0, 255, 247, 1)
             }
 
             &.active::after {
@@ -38,7 +37,7 @@ export const HeaderContainer = styled.header`
                 position: absolute;
                 bottom: 1px;
                 left: 0;
-                background-color: white;
+                background-color: rgba(0, 255, 247, 1);
 
             }
 

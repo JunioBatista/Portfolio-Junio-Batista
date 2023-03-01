@@ -1,35 +1,59 @@
 
 import React from "react";
-import Image from "next/image";
 
-import profilePicture from '../../public/images/euport.png';
-import { HomeMainContainer } from "../styles/pages/home/Home.styles";
-import { Fade } from "react-awesome-reveal";
-import { ProgrammingToolsCard } from "../components/card-programming-tools";
+import { HomeMainContainer, FirstSection} from "../styles/pages/home/Home.styles";
+import { Fade, Slide } from "react-awesome-reveal";
+import Lottie from 'react-lottie';
+import animationData from '../data/develop.json';
+import Image from "next/image";
+import { DefaultContainer } from "../styles/globals.styles";
 
 export default function Home() {
 
-  let tools = [
-    {
-      id:1,
-      name: 'React',
-      image:'src'
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
     }
-  ]
+  };
 
   return (
-    <Fade>
+    <DefaultContainer>
       <HomeMainContainer>
-        <div className="profile"> 
+        <FirstSection>
+          <Fade>
+            <div className="hello">
+              <Fade>
+                <h1> Hello! 👋 </h1>
+                <p>Welcome to my page!</p>
+              </Fade>
+            </div> 
+          </Fade>
 
-            <Fade>
-              <h1 className="main-title"> Hi! I Am</h1>
-            </Fade>
-            <h1 className="name"> Junio Batista </h1>.
+          <div className="presentation">
+            <Image className="profile-picture" height={270} width={255} src="/images/perfil.png" alt="minha foto de rosto" />
+            <h1 className="iam">I Am </h1>
+            <h1 className="name"> Junio Batista </h1>
+            <h1 className="profession">Full Stack Developer </h1>
+          </div>
+          <div className="social-media">
+            
+          </div>
 
+        </FirstSection>
+        <div className="animation">
+          <Slide direction="right">
+            <Lottie 
+              options={defaultOptions}
+              height={650}
+              width={650}
+            />
+          </Slide>
         </div>
       </HomeMainContainer>
-    </Fade>
+    </DefaultContainer>
   )
 }
 

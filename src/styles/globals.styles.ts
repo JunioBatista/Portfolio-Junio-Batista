@@ -1,12 +1,11 @@
-import { createGlobalStyle } from "styled-components";
-import bg from '../../assets/bg.jpg'
+import styled , { createGlobalStyle }  from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 
 * {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Poppins', sans-serif;  
   }
 
     body {
@@ -20,12 +19,8 @@ export const GlobalStyles = createGlobalStyle`
       font-family: 'sans-serif';
       font-weight: 400;
     }
-
-    /* THEME
-    AMARELO - FDC131
-    BRANCO AMARELADO - F9F2E7
-    ROSÉ - F7B1C3
-    ROXO500- 47467B
-    ROXO100- 7867BF */
-
 `;
+
+export const DefaultContainer = styled.section`
+    height: calc(100vh - 9.08rem );
+`
