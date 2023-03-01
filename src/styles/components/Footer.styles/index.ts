@@ -7,25 +7,34 @@ export const FooterContainer = styled.footer`
     border-bottom: 1px solid rgb(145, 145, 145);
     display:flex;
     height: 5rem;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
+    gap:2rem;
 
-    > button {
-        border-radius: 12px;
-        padding: 1rem 3rem;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: 400;
-        background: transparent;
-        border:  3px solid rgba(0, 255, 247, 1);
-        transition: .2s;
-        :hover {
-            background-color: rgba(0, 255, 247, 1);
-            color: black
+    .social-media {
+        padding-left:1rem ;
+        border-left: 1px solid rgba(0, 255, 247, 1);
+        display: flex;
+        flex-direction: column;
+
+        span{
+            font-size: .8rem;
         }
-        :active {
-            background-color: rgba(0, 129, 185, 1);;
-            color: black
+
+        > div {     
+            display: flex;
+            justify-content:space-between;
+
+            a {
+                font-size: 1.5rem;
+                color: rgb(145, 145, 145);
+                transition: .6s;
+                &:hover{
+                    color: rgba(0, 255, 247, 1);
+                }
+            }
         }
     }
+
+
 `

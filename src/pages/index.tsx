@@ -7,6 +7,8 @@ import Lottie from 'react-lottie';
 import animationData from '../data/develop.json';
 import Image from "next/image";
 import { DefaultContainer } from "../styles/globals.styles";
+import { BsDownload } from "react-icons/bs";
+import { CiMail } from "react-icons/ci";
 
 export default function Home() {
 
@@ -38,8 +40,13 @@ export default function Home() {
             <h1 className="name"> Junio Batista </h1>
             <h1 className="profession">Full Stack Developer </h1>
           </div>
-          <div className="social-media">
-            
+          <div className="buttons">
+            <button> 
+              <span> <BsDownload/></span> Download CV
+            </button>
+            <button>
+              <span><CiMail/></span> Text me
+            </button>
           </div>
 
         </FirstSection>

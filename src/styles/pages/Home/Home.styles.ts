@@ -76,7 +76,7 @@ export const FirstSection  =  styled.div`
             border-right: .6rem solid rgba(0, 255, 247, 1);
             white-space: nowrap;
             font-size: 4rem;
-            animation: typing 4s forwards;
+            animation: typing 2s forwards;
         }
 
         .profession {
@@ -90,6 +90,46 @@ export const FirstSection  =  styled.div`
             border: 3px solid rgba(0, 255, 247, 1);
             border-radius: 50%;
             margin-bottom: -3rem;
+        }
+    }
+
+    .buttons {
+        margin-top: 5rem;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            text-align: center;
+            width: 15rem;
+            margin: 0 .3rem;
+            border-radius: 12px;
+            padding: 1rem;
+            color: white;
+            font-size: 1rem;
+            font-weight: 400;
+            background: transparent;
+            border:  1px solid rgba(0, 255, 247, 1);
+            transition: .2s;
+            vertical-align: middle;
+            line-height: 2rem;
+            span  {
+                font-weight: 400;
+                margin-right: 6px;
+                font-size:1.4rem;
+                vertical-align: middle;
+            }
+
+            :hover {
+                background-color: rgba(0, 255, 247, 1);
+                color: black
+            }
+            
+            :active {
+                background-color: transparent;
+                color: black
+            }
         }
     }
 
