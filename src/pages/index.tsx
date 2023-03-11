@@ -55,8 +55,8 @@ export default function Home() {
           <Slide direction="right">
             <Lottie 
               options={defaultOptions}
-              height={500}
-              width={500}
+              height={650}
+              width={650}
             />
           </Slide>
           <h1 className="profession">Full Stack Developer </h1>

@@ -110,7 +110,7 @@ export const HeaderContainer = styled.header`
         }
 
         .mobo-nav-active{
-            height:auto;
+            height:100%;
             width: 100%;
             margin-top:6rem;
             position: absolute;

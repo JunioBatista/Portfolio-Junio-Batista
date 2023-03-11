@@ -28,7 +28,7 @@ export const HomeMainContainer = styled.section`
             position: absolute;
             bottom:15%;
             font-family: 'Bad Script', cursive;
-            font-size: 2rem;
+            font-size: 4rem;
             line-height: 2rem;
         }
     }
@@ -56,6 +56,8 @@ export const FirstSection  =  styled.div`
     flex-direction: column;
 
     .hello {
+
+        width: 100%;
         align-self: flex-start !important;
         justify-self: flex-start;
         padding: 1rem;
@@ -120,6 +122,7 @@ export const FirstSection  =  styled.div`
         align-items: center;
 
         button {
+            cursor: pointer;
             width: 15rem;
             text-align: center;
             margin: 0 .3rem;
@@ -146,11 +149,72 @@ export const FirstSection  =  styled.div`
             }
             
             :active {
-                background-color: transparent;
+                background-color: rgba(0, 255, 247, 1);
                 color: black
             }
         }
     }
 
+    @media (max-width: 543px) { 
+        display: flex;
+        width: 100%;
+        .hello {
+
+            margin-left: 3rem;
+
+            h1 {
+
+                font-weight: 400;
+                font-size: 1.5rem;
+
+                ::first-letter {
+                    text-decoration: underline;
+                }
+            }
+            p {
+                width: 10rem;
+                font-size:.8rem;
+                line-height: .6;
+            }
+        }   
+
+    
+        .presentation .name {
+            font-size:3rem;
+            max-width: 23rem;
+        }
+
+        .presentation .iam {
+            width: 30%;
+            align-self: flex-end;
+            font-weight: 400;
+            color: rgba(222, 222, 222, 1);
+            font-size: 2rem;
+            display: block;
+        }
+
+        
+        .presentation .buttons button {
+            width: 10rem;
+            text-align: center;
+            margin: 0 .3rem;
+            border-radius: 12px;
+            padding: .7rem 1rem;
+            color: white;
+            font-size: .9rem;
+            font-weight: 400;
+            background: transparent;
+            border:  1px solid rgba(0, 255, 247, 1);
+            transition: .2s;
+            vertical-align: middle;
+            line-height: 2rem;
+            span  {
+                font-weight: 400;
+                margin-right: 6px;
+                font-size:1.2rem;
+                vertical-align: middle;
+            }
+        }
+    }
 
 `
