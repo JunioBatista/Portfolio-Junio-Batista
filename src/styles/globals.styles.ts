@@ -22,5 +22,9 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const DefaultContainer = styled.section`
-    height: calc(100vh - 9.08rem );
+max-width: 100vw;
+height: calc(100vh - 9.05rem);
+display: flex;
+overflow: hidden;
+
 `

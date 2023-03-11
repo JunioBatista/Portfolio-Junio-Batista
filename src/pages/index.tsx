@@ -35,29 +35,31 @@ export default function Home() {
           </Fade>
 
           <div className="presentation">
-            <Image className="profile-picture" height={270} width={255} src="/images/perfil.png" alt="minha foto de rosto" />
+            <Image className="profile-picture" height={100} width={100} src="/images/perfil.png" alt="minha foto de rosto" />
             <h1 className="iam">I Am </h1>
             <h1 className="name"> Junio Batista </h1>
-            <h1 className="profession">Full Stack Developer </h1>
+
+            <div className="buttons">
+              <button> 
+                <span> <BsDownload/></span> Download CV
+              </button>
+              <button>
+                <span><CiMail/></span> Text me
+              </button>
+            </div>
           </div>
-          <div className="buttons">
-            <button> 
-              <span> <BsDownload/></span> Download CV
-            </button>
-            <button>
-              <span><CiMail/></span> Text me
-            </button>
-          </div>
+
 
         </FirstSection>
         <div className="animation">
           <Slide direction="right">
             <Lottie 
               options={defaultOptions}
-              height={650}
-              width={650}
+              height={500}
+              width={500}
             />
           </Slide>
+          <h1 className="profession">Full Stack Developer </h1>
         </div>
       </HomeMainContainer>
     </DefaultContainer>

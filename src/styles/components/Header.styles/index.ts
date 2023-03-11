@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
+    display: block;
     padding: 0 1.5rem;
     background-color: #000000;
     border-bottom: 1px solid rgb(145, 145, 145);

@@ -7,11 +7,11 @@ export function Footer() {
     return (
         <FooterContainer>
             <Slide direction="left">
-            Junio Batista © 2023
+            Developed by Junio Batista © 2023 
             </Slide>
             <Slide direction="right">
                 <div className="social-media">
-                    <span>Feel free to add or contact me:</span>
+                    <span>Get in touch:</span>
                     <div>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
                             <BsWhatsapp/>
