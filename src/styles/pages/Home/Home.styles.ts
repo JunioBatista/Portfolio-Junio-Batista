@@ -32,6 +32,20 @@ export const HomeMainContainer = styled.section`
             line-height: 2rem;
         }
     }
+
+    @media (max-width: 1300px) { 
+
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        
+        .animation{
+            display: none
+        }
+     }
+
+
 `
 
 export const FirstSection  =  styled.div`
@@ -90,12 +104,11 @@ export const FirstSection  =  styled.div`
         }
 
         .profile-picture {
-            height: 10rem;
-            width: 10rem;
+            height: 12em;
+            width: 12rem;
             padding: .3rem;
             border: 3px solid rgba(0, 255, 247, 1);
             border-radius: 50%;
-            margin-bottom: -3rem;
         }
     }
 
@@ -138,5 +151,6 @@ export const FirstSection  =  styled.div`
             }
         }
     }
+
 
 `

@@ -5,7 +5,7 @@ export const HeaderContainer = styled.header`
     padding: 0 1.5rem;
     background-color: #000000;
     border-bottom: 1px solid rgb(145, 145, 145);
-    display:flex !important;
+    display:flex;
     justify-content: space-between;
     align-items: center;
 
@@ -52,4 +52,93 @@ export const HeaderContainer = styled.header`
         height: 3.5rem;
         width: 4.5rem;
     }
+
+
+
+    @media (max-width: 1015px) { 
+        height: 4rem;
+
+        .icon {
+            position: relative;
+            width:  50px;
+            height: 50px;
+        }
+
+         .hamburguer {
+            position: absolute;
+            top: 50%;
+            width: 37px;
+            height:4px;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+
+        .hamburguer::before {
+            position: absolute;
+            top: -12px;
+            content: "";
+            width: 120%;
+            height:4px;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+
+        .hamburguer::after {
+            position: absolute;
+            top: 12px;
+            content: "";
+            width: 120%;
+            height:4px;
+            background-color: #fff;    
+            transition: 0.5s;
+        }
+
+        .icon-active .hamburguer{
+            background: transparent;
+        }
+
+        .icon-active .hamburguer::after{
+            top:0;
+            background: #fff;
+            transform: rotate(225deg);
+        }
+        
+        .icon-active .hamburguer::before{
+            top:0;
+            background: #fff;
+            transform: rotate(135deg);
+        }
+
+        .mobo-nav-active{
+            height:auto;
+            width: 100%;
+            margin-top:6rem;
+            position: absolute;
+            top:-40px;
+            right: 0px;
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+            background-color: #000000;
+
+            a{
+                margin: 0;
+                text-align: center;
+                background-color: #000000;
+                padding: 0 2rem;
+            }
+        }
+        
+
+        
+        nav {
+            display: none;
+        }
+
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
 `
