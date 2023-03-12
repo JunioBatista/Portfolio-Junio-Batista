@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.footer`
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
     display: block;
     border-top: 1px solid rgb(145, 145, 145);;
     padding: 0 1.5rem;

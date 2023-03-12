@@ -1,3 +1,7 @@
+import { DefaultContainer } from "../../styles/globals.styles";
+
 export default function About () {
-    return (<p>About</p>)
+    return (<DefaultContainer>
+        <p>About!</p>
+    </DefaultContainer>)
 }

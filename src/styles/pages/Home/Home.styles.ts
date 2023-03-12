@@ -1,15 +1,46 @@
 import styled from  'styled-components'
 
 export const HomeMainContainer = styled.section`
+    margin-top:4rem ;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
     display: grid;
-    grid-template-columns: 50% 45%;
-    gap: 5%;
+    grid-template-columns: 1fr;
     background-image: url('/images/waves.svg');
     background-color: #191919;
     background-repeat: no-repeat;
+
+    .lang-toggle {
+        padding: 8px 0 5px 10px; 
+        position: absolute;
+        top: 4.5rem;
+        right: .5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+        color: rgba(222, 222, 222, 1);
+        border:  none;
+        transition: .2s;
+        vertical-align: baseline;
+        color: black;
+
+        span  {
+            padding: .5rem;
+            font-size:.9rem;
+            vertical-align: middle;
+        }
+
+        :hover {
+            background-color: rgba(0, 255, 247, 1);
+        }
+        
+        :active {
+            background-color: rgba(0, 255, 247, 1);
+            color: black
+        }
+    }
 
     @keyframes typing {
     from { width: 0 }
@@ -45,6 +76,8 @@ export const HomeMainContainer = styled.section`
         }
      }
 
+     
+
 
 `
 
@@ -55,12 +88,12 @@ export const FirstSection  =  styled.div`
     display: flex;
     flex-direction: column;
 
-    .hello {
 
+    .hello {
+        padding-left: .5rem;
         width: 100%;
         align-self: flex-start !important;
         justify-self: flex-start;
-        padding: 1rem;
 
         h1 {
             font-weight: 400;
@@ -80,6 +113,7 @@ export const FirstSection  =  styled.div`
         align-self:center;
         width: 30rem;
         display: flex;
+        gap: .5rem;
         flex-grow: 1;
         flex-direction: column;
         justify-content: center;
@@ -87,28 +121,28 @@ export const FirstSection  =  styled.div`
         
         .iam {
             align-self: flex-end;
+            line-height: 2rem;
             font-weight: 400;
             color: rgba(222, 222, 222, 1);
-            font-size: 2rem;
+            font-size: 3rem;
             display: block;
         }
 
         .name { 
-            max-width: 30rem;
+            max-width: 35rem;
             font-weight: 900;
             color: rgba(0, 255, 247, 1);
             overflow: hidden;
             border-right: .6rem solid rgba(0, 255, 247, 1);
             white-space: nowrap;
-            font-size: 3.7rem;
+            font-size: 4.1rem;
             animation: typing 2s forwards;
-
         }
 
         .profile-picture {
-            height: 12em;
-            width: 12rem;
-            padding: .3rem;
+            height: 15em;
+            width: 15rem;
+            padding: .4rem;
             border: 3px solid rgba(0, 255, 247, 1);
             border-radius: 50%;
         }
@@ -218,3 +252,6 @@ export const FirstSection  =  styled.div`
     }
 
 `
+
+
+

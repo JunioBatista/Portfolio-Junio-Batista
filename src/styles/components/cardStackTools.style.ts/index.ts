@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ToolCardContainer = styled.div`
+export const StackToolsCard = styled.div`
     width: 6rem;
     border-radius: 12px;
     margin: .8rem;

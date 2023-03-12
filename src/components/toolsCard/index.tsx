@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ToolCardContainer } from "../../styles/components/cardProgrammingTools.style.ts";
+import { ToolCardContainer } from "../../styles/components/cardStackTools.style.ts";
 
 interface programmingToolProp {
     id:number;

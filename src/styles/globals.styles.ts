@@ -23,9 +23,9 @@ export const GlobalStyles = createGlobalStyle`
 `;
 
 export const DefaultContainer = styled.section`
-max-width: 100vw;
-height: calc(100vh - 9.05rem);
-display: flex;
-overflow: hidden;
+  max-width: 100vw;
+  height: calc(100vh - 4.1rem);
+  display: flex;
+  overflow: hidden;
 
 `
