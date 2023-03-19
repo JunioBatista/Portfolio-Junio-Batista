@@ -111,7 +111,6 @@ export const FirstSection  =  styled.div`
 
     .presentation {
         align-self:center;
-        width: 30rem;
         display: flex;
         gap: .5rem;
         flex-grow: 1;
@@ -129,22 +128,22 @@ export const FirstSection  =  styled.div`
         }
 
         .name { 
-            max-width: 35rem;
+            max-width: 50rem;
             font-weight: 900;
             color: rgba(0, 255, 247, 1);
             overflow: hidden;
-            border-right: .6rem solid rgba(0, 255, 247, 1);
             white-space: nowrap;
-            font-size: 4.1rem;
+            font-size: 4.5rem;
             animation: typing 2s forwards;
         }
 
         .profile-picture {
             height: 15em;
             width: 15rem;
-            padding: .4rem;
-            border: 3px solid rgba(0, 255, 247, 1);
-            border-radius: 50%;
+            padding: .3rem;
+            border: 1px solid #00fff7ff;
+            border-radius: 100%;
+            box-shadow: .1rem .1rem .1rem .1rem #00fff7ff;
         }
     }
 

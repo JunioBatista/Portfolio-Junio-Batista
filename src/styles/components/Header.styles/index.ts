@@ -16,6 +16,7 @@ export const HeaderContainer = styled.header`
         height: 4rem;
 
         a {
+            text-decoration: none; 
             margin: 0 1.5rem;
             font-size: 1.2rem;
             color: rgb(145, 145, 145);
@@ -23,14 +24,15 @@ export const HeaderContainer = styled.header`
             position: relative;
             height: 4rem;
             line-height: 4rem;
-            transition: color .3s;
+            transition: .3s;
 
             &:hover {
                 color:  rgb(255, 255, 255);
             }
 
             &.active {
-                color:rgba(0, 255, 247, 1)
+                color:rgba(0, 255, 247, 1);
+                transition: 1s;
             }
 
             &.active::after {
@@ -42,6 +44,7 @@ export const HeaderContainer = styled.header`
                 bottom: 1px;
                 left: 0;
                 background-color: rgba(0, 255, 247, 1);
+                transition: .3s;
 
             }
 

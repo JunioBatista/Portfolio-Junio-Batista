@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 
-export const SkillsContainer = styled.section`
+export const EducationContainer = styled.section`
 
     /* pattern */
     box-sizing: border-box;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #aa1186;
+    background-color: #462121;
 
     .linha {
         width: 100%;
