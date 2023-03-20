@@ -31,7 +31,7 @@ export const HeaderContainer = styled.header`
             }
 
             &.active {
-                color:rgba(0, 255, 247, 1);
+                color: #00d9ff;
                 transition: 1s;
             }
 
@@ -43,7 +43,7 @@ export const HeaderContainer = styled.header`
                 position: absolute;
                 bottom: 1px;
                 left: 0;
-                background-color: rgba(0, 255, 247, 1);
+                background-color:  #00d9ff;
                 transition: .3s;
 
             }

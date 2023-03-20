@@ -7,7 +7,7 @@ export function Footer() {
     return (
         <FooterContainer>
             <Slide direction="left">
-            Developed by Junio Batista © 2023 
+            Designed and developed by Junio Batista © 
             </Slide>
             <Slide direction="right">
                 <div className="social-media">

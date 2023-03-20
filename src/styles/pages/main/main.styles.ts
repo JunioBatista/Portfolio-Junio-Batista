@@ -33,11 +33,11 @@ export const HomeMainContainer = styled.section`
         }
 
         :hover {
-            background-color: rgba(0, 255, 247, 1);
+            background-color:  #00d9ff;
         }
         
         :active {
-            background-color: rgba(0, 255, 247, 1);
+            background-color:  #00d9ff;
             color: black
         }
     }
@@ -130,7 +130,7 @@ export const FirstSection  =  styled.div`
         .name { 
             max-width: 50rem;
             font-weight: 900;
-            color: rgba(0, 255, 247, 1);
+            color:  #00d9ff;
             overflow: hidden;
             white-space: nowrap;
             font-size: 4.5rem;
@@ -141,9 +141,9 @@ export const FirstSection  =  styled.div`
             height: 15em;
             width: 15rem;
             padding: .3rem;
-            border: 1px solid #00fff7ff;
+            border: 1px solid  #00d9ff;
             border-radius: 100%;
-            box-shadow: .1rem .1rem .1rem .1rem #00fff7ff;
+            box-shadow: .1rem .1rem .1rem .1rem #00d9ff;
         }
     }
 
@@ -165,7 +165,7 @@ export const FirstSection  =  styled.div`
             font-size: .8rem;
             font-weight: 400;
             background: transparent;
-            border:  1px solid rgba(0, 255, 247, 1);
+            border:  1px solid  #00d9ff;
             transition: .2s;
             vertical-align: middle;
             line-height: 2rem;
@@ -177,12 +177,12 @@ export const FirstSection  =  styled.div`
             }
 
             :hover {
-                background-color: rgba(0, 255, 247, 1);
+                background-color:  #00d9ff;
                 color: black
             }
             
             :active {
-                background-color: rgba(0, 255, 247, 1);
+                background-color:  #00d9ff;
                 color: black
             }
         }
@@ -237,7 +237,7 @@ export const FirstSection  =  styled.div`
             font-size: .9rem;
             font-weight: 400;
             background: transparent;
-            border:  1px solid rgba(0, 255, 247, 1);
+            border:  1px solid  #00d9ff;
             transition: .2s;
             vertical-align: middle;
             line-height: 2rem;

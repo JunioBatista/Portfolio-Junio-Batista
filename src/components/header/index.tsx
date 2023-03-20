@@ -17,7 +17,7 @@ export function Header() {
             setActiveMenu('skills')
         } else if(mapYscreen > 2401 &&  mapYscreen <= 2900) {
             setActiveMenu('projects')
-        } else if(mapYscreen > 2901 ) {
+        } else if(mapYscreen > 3101 ) {
             setActiveMenu('experience')
         }
     }
